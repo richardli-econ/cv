@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Li - Curriculum Vitae</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.5;
+            color: #222;
+            background: #f5f5f0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 50px 60px;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.08);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2.2em;
+            font-weight: normal;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        header .updated {
+            font-size: 0.85em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #444;
+            line-height: 1.7;
+        }
+        .contact-info a { color: #1a5276; text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+        section { margin-bottom: 28px; }
+        section h2 {
+            font-size: 1.15em;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
+            margin-bottom: 14px;
+            color: #1a1a1a;
+        }
+        .entry {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .entry .left { flex: 1; padding-right: 20px; }
+        .entry .right {
+            text-align: right;
+            white-space: nowrap;
+            color: #555;
+            font-size: 0.9em;
+            min-width: 200px;
+        }
+        .entry h3 {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 1px;
+        }
+        .entry .detail, .entry .sub {
+            font-size: 0.92em;
+            color: #444;
+        }
+        .sub-entry {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            font-size: 0.92em;
+            color: #444;
+            margin-bottom: 3px;
+        }
+        .sub-entry .right {
+            text-align: right;
+            white-space: nowrap;
+            color: #555;
+            font-size: 0.9em;
+            min-width: 200px;
+        }
+        .interests-row { margin-bottom: 6px; }
+        .interests-row strong { color: #333; }
+        .wip-item { margin-bottom: 8px; font-size: 0.95em; }
+        .wip-item em { font-style: italic; }
+        .skills-row { margin-bottom: 6px; font-size: 0.93em; }
+        .note { font-size: 0.85em; color: #777; margin-top: 2px; margin-left: 20px; }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            font-size: 0.8em;
+            color: #999;
+        }
+        footer a { color: #999; }
+        @media (max-width: 650px) {
+            .container { padding: 25px 20px; margin: 10px; }
+            .entry { flex-direction: column; }
+            .entry .right { text-align: left; min-width: auto; }
+            .sub-entry { flex-direction: column; }
+            .sub-entry .right { text-align: left; min-width: auto; }
+            header h1 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Richard Li</h1>
+        <p class="updated">Last updated: December 2025</p>
+        <div class="contact-info">
+            Department of Economics, McMaster University<br>
+            1280 Main St. West, Hamilton, ON, CANADA L8S 4M4<br>
+            Email: lip83[at]mcmaster[dot]ca<br>
+            <a href="https://github.com/richardli-econ">GitHub</a> &middot;
+            <a href="https://sites.google.com/view/richard-li/">Personal Website</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="left">
+                <h3>PhD in Economics</h3>
+                <div class="detail">McMaster University</div>
+                <div class="sub">Thesis Committee: Bradley J. Ruffle (Main Supervisor), Michel Grignon, Todd Kaplan</div>
+            </div>
+            <div class="right">2022 &ndash; Present<br>Expected: 2026</div>
+        </div>
+        <div class="entry">
+            <div class="left">
+                <h3>Visiting PhD Student</h3>
+                <div class="detail">University of Exeter</div>
+            </div>
+            <div class="right">February &ndash; March, 2026</div>
+        </div>
+        <div class="entry">
+            <div class="left">
+                <h3>Master of Arts in Business Economics</h3>
+                <div class="detail">Lazaridis School of Business &amp; Economics, Wilfrid Laurier University</div>
+                <div class="sub">Major Research Paper Supervisor: Edda Claus</div>
+            </div>
+            <div class="right">2020 &ndash; 2021</div>
+        </div>
+        <div class="entry">
+            <div class="left">
+                <h3>Honours Bachelor of Arts and Business</h3>
+                <div class="detail">University of Waterloo</div>
+                <div class="sub">Major in Economics (with Distinction)<br>Specialization in Finance<br>Minors in International Trade; Geography &amp; Environmental Management</div>
+            </div>
+            <div class="right">2015 &ndash; 2020</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Research Interests</h2>
+        <div class="interests-row"><strong>Primary:</strong> Behavioural Economics; Experimental Economics</div>
+        <div class="interests-row"><strong>Secondary:</strong> Population Economics; Game Theory</div>
+    </section>
+
+    <section>
+        <h2>Work in Progress</h2>
+        <div class="wip-item"><em>Which Way to Coordinate</em>, with Todd Kaplan and Bradley J. Ruffle.</div>
+        <div class="wip-item"><em>Discrete Choice and Alzheimer's disease and drugs</em>, with Ahmad von Schlegell, Arthur Sweetman, Shaun Shaikh, and Chris Longo.</div>
+    </section>
+
+    <section>
+        <h2>Conference and Seminar Presentations</h2>
+        <div class="entry">
+            <div class="left">
+                <h3>Xi'an Jiaotong-Liverpool University</h3>
+                <div class="detail">Suzhou, China</div>
+                <div class="sub">Project: Which Way to Coordinate</div>
+            </div>
+            <div class="right">July 2025</div>
+        </div>
+        <div class="entry">
+            <div class="left">
+                <h3>Canadian Economics Association</h3>
+                <div class="detail">Universit&eacute; du Qu&eacute;bec &agrave; Montr&eacute;al</div>
+                <div class="sub">Project: Which Way to Coordinate</div>
+            </div>
+            <div class="right">May 2025</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Teaching &amp; Research Assistantship</h2>
+        <div class="entry">
+            <div class="left">
+                <h3>Course Instructor</h3>
+                <div class="detail">McMaster University</div>
+            </div>
+            <div class="right">2025 &ndash; Present</div>
+        </div>
+        <div class="sub-entry">
+            <div>ECON 2A03 Economics of Labour-Market Issues (Teaching Evaluation: 8.93/10)</div>
+            <div class="right">Fall 2025</div>
+        </div>
+
+        <div class="entry" style="margin-top:14px;">
+            <div class="left">
+                <h3>Teaching Assistant</h3>
+                <div class="detail">McMaster University</div>
+            </div>
+            <div class="right">2022 &ndash; Present</div>
+        </div>
+        <div class="sub-entry"><div>Econ 3H03 International Monetary Economics</div><div class="right">Fall 2022, 2023, Winter 2025</div></div>
+        <div class="sub-entry"><div>Econ 1BB3 Introductory Macroeconomics*</div><div class="right">Fall 2024, Winter 2025</div></div>
+        <div class="sub-entry"><div>SocSci 2J03 Introduction to Statistics</div><div class="right">Fall 2024</div></div>
+        <div class="sub-entry"><div>Econ 2P03 Economics of Professional Sports</div><div class="right">Fall 2024</div></div>
+        <div class="sub-entry"><div>Econ 2Z03 Intermediate Microeconomics I*</div><div class="right">Fall 2022, 2023, Spring 2025</div></div>
+        <p class="note">* With Tutorials</p>
+
+        <div class="entry" style="margin-top:14px;">
+            <div class="left">
+                <h3>Research Assistant in Lieu</h3>
+                <div class="detail">Professor Mike Veall, McMaster University</div>
+            </div>
+            <div class="right">Fall 2023, Winter 2023, 2024</div>
+        </div>
+
+        <div class="entry" style="margin-top:14px;">
+            <div class="left">
+                <h3>Teaching &amp; Instructional Assistant</h3>
+                <div class="detail">Wilfrid Laurier University</div>
+            </div>
+            <div class="right">2020 &ndash; 2022</div>
+        </div>
+        <div class="sub-entry"><div>EC 370 Intermediate Microeconomics II</div><div class="right">Winter 2022</div></div>
+        <div class="sub-entry"><div>EC 328 Economics of Education</div><div class="right">Winter 2022</div></div>
+        <div class="sub-entry"><div>EC 316 Economics and Gender</div><div class="right">Winter 2022</div></div>
+        <div class="sub-entry"><div>EC 260 Microeconomic Analysis</div><div class="right">Winter 2022</div></div>
+        <div class="sub-entry"><div>EC 246 Economics of Inequality</div><div class="right">Winter 2022</div></div>
+        <div class="sub-entry"><div>EC 395 Applied Econometrics</div><div class="right">Spring 2021</div></div>
+        <div class="sub-entry"><div>EC 295 Introductory Econometrics</div><div class="right">Winter 2021</div></div>
+        <div class="sub-entry"><div>EC 285 Introductory Statistics</div><div class="right">Fall 2020</div></div>
+    </section>
+
+    <section>
+        <h2>Fellowships &amp; Awards</h2>
+        <div class="entry">
+            <div class="left"><h3>Graduate Scholarship</h3><div class="detail">McMaster University</div></div>
+            <div class="right">2022 &ndash; Present</div>
+        </div>
+        <div class="entry">
+            <div class="left"><h3>Award for Outstanding Graduate Work &amp; Gold Medal Nominee</h3><div class="detail">Lazaridis School of Business &amp; Economics, Wilfrid Laurier University</div></div>
+            <div class="right">2021</div>
+        </div>
+        <div class="entry">
+            <div class="left"><h3>Universal Electronics International Trade Travel Award</h3><div class="detail">University of Waterloo</div></div>
+            <div class="right">2017</div>
+        </div>
+        <div class="entry">
+            <div class="left"><h3>Merit Scholarship</h3><div class="detail">University of Waterloo</div></div>
+            <div class="right">2016</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <div class="entry">
+            <div class="left"><h3>Ceded Reinsurance Intern</h3><div class="detail">The RiverStone Group (A Fairfax Company), Manchester, NH</div></div>
+            <div class="right">January &ndash; April 2019</div>
+        </div>
+        <div class="entry">
+            <div class="left"><h3>Quality Assurance Analyst</h3><div class="detail">University of Waterloo, Waterloo, ON</div></div>
+            <div class="right">Sept. &ndash; Dec. 2017 &amp;<br>May &ndash; Aug. 2018</div>
+        </div>
+        <div class="entry">
+            <div class="left"><h3>Data Quality Analyst</h3><div class="detail">Flipp Corporation, Toronto, ON</div></div>
+            <div class="right">January &ndash; April 2017</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Referee Service</h2>
+        <p style="font-size:0.95em;">Journal of Behavioral and Experimental Economics</p>
+    </section>
+
+    <section>
+        <h2>Software</h2>
+        <div class="skills-row"><strong>Proficient in:</strong> Stata; R; Microsoft Office; LaTeX</div>
+        <div class="skills-row"><strong>Familiar with:</strong> oTree; Python; EViews; JIRA; QGIS; Adobe After Effects, Audition, Premiere Pro, Lightroom; CapCut; iMovie</div>
+    </section>
+
+    <footer>
+        &copy; 2026 Richard Li. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
+    </footer>
+</div>
+</body>
+</html>
